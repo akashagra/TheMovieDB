@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.avma1997.tmdb.Main2Activity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+            <ViewFlipper
+                android:id="@+id/viewflipper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoStart="true"
+
+                android:flipInterval="4000">
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY" />
+
+
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/iv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/iv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/iv5"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY" />
+            </ViewFlipper>
+            <!--<android.support.v4.view.ViewPager-->
+                <!--android:id="@+id/containerimage"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+
+            <!--</android.support.v4.view.ViewPager>-->
+
+            <!--  -->
+
+
+
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background=	"#1f1f14"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            </android.support.v7.widget.Toolbar>
+       
+
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1f1f14"
+            android:layout_gravity="top"
+
+            android:id="@+id/tab2"
+
+            />
+
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    </android.support.v4.view.ViewPager>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_watchlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="200dp"
+        android:layout_marginRight="16dp"
+        app:srcCompat="@drawable/list"
+
+        android:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        android:visibility="invisible"
+
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_favourite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="150dp"
+        android:layout_marginRight="16dp"
+        app:srcCompat="@drawable/favorite"
+
+        android:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        android:visibility="invisible"
+
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="16dp"
+        app:srcCompat="@drawable/set_alarm"
+
+        android:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        android:visibility="invisible"
+
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        app:srcCompat="@drawable/add"
+        android:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+
+        />
+
+
+</android.support.design.widget.CoordinatorLayout>
